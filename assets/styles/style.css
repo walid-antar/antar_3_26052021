@@ -279,3 +279,89 @@ header {
 .operation ol li {
     font-size: 0.8em;
 }
+/*restaurant*/
+.restaurant {
+    display: flex;
+    padding: 70px 32px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 16px;
+    column-gap: 32px;
+    background-color: #f6f6f6;
+}
+.menu_title {
+    margin: 16px;
+}
+.restaurant h3 {
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+.restaurant_title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+.restaurant article {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    transition: ease-in-out 0.4s;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.restaurant article a {
+    width: 100%;
+}
+.restaurant article:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.restaurant figure {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+}
+.restaurant figure img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+.restaurant figure figcaption {
+    display: flex;
+    border-radius: 0 0 32px 32px;
+    background-color: #fff;
+    flex: 1;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+}
+.figc {
+    display: flex;
+    flex-direction: column;
+}
+.restaurant figure span {
+    position: absolute;
+    right: 16px;
+    background-color: var(--tertiary-color);
+    color: #008766;
+    padding: 16px;
+    border-radius: 4px;
+    margin-top: 16px;
+    font-weight: 700;
+}
+.like {
+    font-size: 20px;
+    margin-right: 10px;
+    transition: -webkit-text-fill-color ease-out 1.5s, font-weight ease 0.4s;
+}
+.like:hover,
+.like:visited {
+    background: linear-gradient(to top, #ff79da, #9356dc);
+    background: -webkit-linear-gradient(to top, #ff79da, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
