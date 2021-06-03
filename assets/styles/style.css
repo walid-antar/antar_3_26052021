@@ -172,3 +172,50 @@ img {
     margin-bottom: 0.8rem;
     border-radius: 12px;
 }
+
+
+.section-two img {
+    object-fit: cover;
+}
+.novelties-flag p {
+    margin: 5px 10px 5px 10px;
+}
+.novelties-flag {
+    background-color: #9ae2d0;
+    color: #278666;
+    font-size: 16px;
+    position: absolute;
+    right: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 2px;
+}
+h4{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+.card-content{
+    margin: 5px 0px 5px 10px;
+}
+.content{
+    padding: 1px;
+}
+.restaurant-location {
+    font-family: "Roboto Thin", sans-serif;
+    font-weight: lighter;
+}
+.section-two {
+    background-color: #F6F6F6;
+}
+.section-restaurants .restaurant-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 26px 58px -22px rgb(0 0 0 / 48%);
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.restaurant-card:hover {
+    transition: .5s;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 2px rgba(147, 86, 220,0.6);
+}
