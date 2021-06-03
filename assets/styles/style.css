@@ -365,3 +365,37 @@ header {
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
+/*footer*/
+footer {
+    background-color: #353535;
+    color: #fff;
+    padding: 32px;
+}
+footer li {
+    display: flex;
+    line-height: 1.5;
+}
+.footer_title {
+    font-family: "shrikhand", cursive;
+    padding-bottom: 32px;
+    width: 300px;
+    font-size: 1.8em;
+}
+footer a i {
+    padding-right: 14px;
+    color: #fff;
+}
+footer a {
+    color: #fff;
+    transition: padding-bottom ease 0.4s, font-weight 0.2s;
+}
+footer a:hover {
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.helping {
+    font-size: 0.8em;
+}
+.ustensils {
+    padding-right: 18px;
+}
