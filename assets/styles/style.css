@@ -126,3 +126,49 @@ input {
 .header-title img {
     height: 25px;
 }
+
+
+
+.section-one{
+    padding: 1rem;
+}
+.minicard__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+}
+.minicard__content:hover {
+    background-color: #ecd0fc;
+    border-radius: 25px;
+}
+.miniicon{
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #818181;
+}
+.miniicon:hover {
+    color: #9356DC;
+}
+.minicard__content .circle {
+    background-color: #9356DC;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    margin: 0px 10px 0px -11px;
+    padding: 5px 8px;
+}
+.banniere-img {
+    margin-bottom: -30px;
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+img {
+    width: 100%;
+    height:200px;
+    margin-bottom: 0.8rem;
+    border-radius: 12px;
+}
