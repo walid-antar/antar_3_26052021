@@ -495,3 +495,33 @@ footer a:hover {
       right: 5px;
     }
 }
+/*tablette*/
+
+@media screen and (min-width: 768px) {
+    .operation {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .operation ol {
+      display: inline-flex;
+    }
+    .operation ol li {
+      margin: 32px;
+      font-size: 0.8em;
+    }
+    .photo {
+      max-height: 400px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .restaurant article {
+      width: 45%;
+      max-width: 550px;
+    }
+    .heading p {
+      font-size: 1.4em;
+    }
+    .heading h1 {
+      font-size: 1.6em;
+    }
+}
