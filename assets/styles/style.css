@@ -556,4 +556,34 @@ footer a:hover {
       font-size: 2em;
     }
 }
+/*desktop*/
+@media screen and (min-width: 1440px) {
+    .operation ol li {
+      font-size: 1em;
+    }
+    .content_wrapper,
+    .main_menu {
+      max-width: 1440px;
+      margin: auto;
+    }
+    .restaurant {
+      border-radius: 32px;
+      margin-bottom: 64px;
+    }
   
+    footer {
+      border-radius: 32px 32px 0 0;
+    }
+  
+    .heading {
+      border-radius: 0 0 32px 32px;
+    }
+    .location {
+      border-radius: 32px 32px 0 0;
+    }
+    .menu_wrapper {
+      margin-bottom: 64px;
+      border-radius: 32px;
+    }
+}
+    
