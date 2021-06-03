@@ -399,3 +399,39 @@ footer a:hover {
 .ustensils {
     padding-right: 18px;
 }
+/*breakpoints*/
+@media only screen and (max-width: 440px) {
+    .btn_menu {
+      width: 200px;
+    }
+    .title h1 {
+      font-size: 0.8em;
+    }
+    .like {
+      font-size: 0.5em;
+      padding-bottom: 20px;
+      margin-right: 5px;
+    }
+    .title .like {
+      padding-bottom: 2px;
+    }
+    .restaurant article {
+      min-width: 200px;
+      max-height: 190px;
+    }
+    .restaurant figure span {
+      font-size: 0.5em;
+      right: 20px;
+      top: 30px;
+      padding: 10px;
+    }
+    .figc p {
+      padding-bottom: 30px;
+    }
+    footer li {
+      font-size: 1em;
+    }
+    .operation ol li {
+      font-size: 0.7em;
+    }
+}
