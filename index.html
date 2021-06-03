@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/styles/style.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap">
-    <title>Ohmyfood</title>
-</head>
-<body class="home">
-    <header>
-        <div class="logo">
-            <img alt="Ohmyfood" src="assets/images/logo/ohmyfood.png"/>
-        </div>
-        <div class="header">
-            <form class="search">
-                <div class="icon-localisation">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="input-city">
-                    <input id="search"  placeholder="Paris, Bellevile" type="text"/>
-                </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+      <link rel="stylesheet" href="assets/styles/style.css" type="text/css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap">
+      <script src="https://kit.fontawesome.com/f86274a797.js" crossorigin="anonymous"></script>
+      <title>Ohmyfood</title>
+   </head>
+   <body>
+      <header>
+         <div class="header__title">
+            <img class="header__img" alt="" src="assets/images/logo/ohmyfood@2x.svg">
+         </div>
+         <div class="header__location">
+            <i class="fas fa-map-marker-alt"></i>
+            <form class="header__city">
+               <p>
+                  <input class="city__location" type="text" placeholder="Paris, Belleville">
+               </p>
             </form>
-        </div>
-    </header>
-</body>
+         </div>
+         <div class="explore-location">
+            <div class="explore-location__title">
+               <h1>Réservez le menu qui vous convient</h1>
+            </div>
+            <div class="explore-location__subtitle">
+               <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            </div>
+            <a aria-label="Explorer nos restaurants" class="explore-location__button" href="#section2">
+            Explorer nos restaurants
+            </a>
+         </div>
+      </header>
+   </body>
 </html>
