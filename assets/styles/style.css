@@ -525,3 +525,35 @@ footer a:hover {
       font-size: 1.6em;
     }
 }
+@media screen and (min-width: 1024px) {
+    .operation ol li {
+      flex: 1;
+      font-size: 0.85em;
+      font-weight: bold;
+    }
+    .restaurant {
+      row-gap: 32px;
+    }
+    .title {
+      width: 100%;
+    }
+    .menu_wrapper {
+      flex-flow: row wrap;
+    }
+    .menu {
+      width: 33%;
+    }
+    .photo {
+      max-height: 500px;
+    }
+    .heading p {
+      font-size: 1.6em;
+    }
+    .heading h1 {
+      font-size: 2em;
+    }
+    .title {
+      font-size: 2em;
+    }
+}
+  
