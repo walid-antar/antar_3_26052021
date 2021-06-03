@@ -435,3 +435,63 @@ footer a:hover {
       font-size: 0.7em;
     }
 }
+@media only screen and (max-width: 767px) {
+    .restaurant figure img {
+      height: 150px;
+    }
+  
+    .operation li i {
+      margin: 16px;
+    }
+    .location_wrapper--bar {
+      font-size: 0.5em;
+    }
+  
+    .btn a {
+      font-size: 1em;
+    }
+    .title {
+      font-size: 1.6em;
+    }
+    .menu_wrapper h3 {
+      font-size: 0.9em;
+    }
+  
+    .coment {
+      font-size: 0.8em;
+    }
+    .menu_title {
+      font-size: 0.8em;
+    }
+    .restaurant figure span {
+      font-size: 0.7em;
+    }
+    .restaurant h3 {
+      font-size: 1em;
+    }
+    .figc p {
+      font-size: 0.8em;
+    }
+    .like {
+      font-size: 1em;
+    }
+    .title .like {
+      font-size: 0.8em;
+    }
+    .menu h2::after {
+      width: 35px;
+    }
+    .menu_wrapper {
+      padding-top: 20px;
+    }
+    .location_wrapper i {
+      font-size: 0.8em;
+    }
+    .operation li {
+      height: 25px;
+    }
+    .arrow {
+      position: relative;
+      right: 5px;
+    }
+}
