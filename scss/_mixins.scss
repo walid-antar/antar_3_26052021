@@ -1,0 +1,236 @@
+@import "colors";
+@import "animations";
+
+@mixin full_page {
+  * {
+    font-family: "roboto";
+    text-decoration: none;
+    color: black;
+  }
+  body {
+    background-color: $grey_card;
+    margin: 0%;
+  }
+}
+
+@mixin shadows {
+  box-shadow: 1px 1px 1px grey;
+}
+
+@mixin btn {
+  box-shadow: $shadows_btn;
+  background: linear-gradient(-10deg, $primary, $secondary);
+  color: $grey_card;
+  border-radius: 30px;
+  border: 0;
+  font-weight: 500;
+  transition: all .3s;
+  opacity: 0.9;
+
+  &:hover{
+    color: white;
+    background: linear-gradient(-190deg, $primary, $secondary);
+    box-shadow: 1px 1px 5px rgb(85, 85, 85);
+    opacity: 1;
+  }
+
+  &:focus {
+    outline:none;
+  }
+}
+
+@mixin use_card {
+  border-radius: 20px;
+  background-color: $grey_card;
+  box-shadow: $shadows_card;
+  align-items: center;
+}
+
+@mixin resto_card {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: $shadows_card;
+  align-items: center;
+}
+
+@mixin menu_card_tablet {
+  
+  padding: 15px;
+  border-radius: 20px ;
+  background: $grey_card;
+  width: 45%;
+
+  h2{
+    margin:0 ;
+  }
+  .line{
+    margin: 10px 0px 15px 0px;
+  }
+}
+
+@mixin menu_card_desktop {
+  
+  padding: 15px;
+  border-radius: 20px ;
+  background: transparent;
+  width: 30%;
+
+  h2{
+    margin:0 ;
+  }
+  .line{
+    margin: 10px 0px 15px 0px;
+  }
+}
+
+@mixin heart {
+  .heart{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    height: 25px;
+    width: 25px;
+    
+    &:hover .state_2{
+      opacity: 0;
+    }
+    
+    &:hover .state_1{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .fa-heart{
+    position: absolute;
+    font-size: 25px;
+  }
+  
+  
+  .state_1{
+    opacity:  0;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+    background: linear-gradient($primary, $secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  
+  .state_2{
+    transition: all .5s ease-in-out;
+  }
+}
+
+@mixin menu_card {
+
+  :nth-child(3){
+    animation-delay: .6s;
+  }
+  :nth-child(4){
+    animation-delay: .7s;
+  }
+  :nth-child(5){
+    animation-delay: .8s;
+  }
+  :nth-child(6){
+    animation-delay: .9s;
+  }
+  
+  &_card {
+    animation: display_card cubic-bezier(0.83, 0.02, 0.36, 1) .5s both;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(214, 214, 214);
+    background: white;
+    padding: 10px;
+    padding-right: 20px;
+    margin: 10px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    box-sizing: content-box;
+    overflow: hidden;
+
+
+
+    .fas{
+      color: white;
+      opacity: 0;
+      font-size: 21px;
+      position: relative;
+      right: -40px;
+      top: -8px;
+      align-self: flex-end;
+      vertical-align: center;
+      transition: all .4s .1s ease-in-out;
+
+    }
+
+    
+    // menu-check ------------------------
+    
+    .green_check{
+      z-index: -1;
+      position: absolute;
+      right: -40px;
+      height: 60px;
+      width: 0px;
+      background-color: $tertiary;
+      transition: all .5s ease-in-out;
+    }
+    
+    &:hover i{
+      transform: translateX(-40px) rotate(-360deg);
+      opacity: 1;
+    }
+    &:hover .green_check{
+      transform: translateX(-40px);
+      width: 60px;
+    }
+    &:hover .prix{
+      transform: translateX(-50px);
+    }
+
+
+    .name {
+      font-size: 15px;
+      font-weight: 600;
+      transition: all .5s ease-in-out;
+
+    }
+    &:hover .name{
+      width: 70%;
+    }
+
+    .subname {
+      font-size: 14px;
+      transition: all .5s ease-in-out;
+    }
+    &:hover .subname{
+      width: 70%;
+    }
+    .prix {
+      font-size: 12px;
+      font-weight: bold;
+      position: relative;
+      align-self: flex-end;
+      top: 23px;
+      transition: all .5s ease-in-out;
+    }
+    
+    :nth-child(1){
+      overflow: hidden;
+
+      white-space: nowrap;
+      width: 90%;
+      text-overflow: ellipsis;
+    }
+    :nth-child(2){
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 85%;
+      white-space: nowrap;
+
+
+    }
+  }
+}
